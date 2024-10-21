@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <h2>Application Form</h2>
+    <form action="/submit-application" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="education">Highest Level of Education:</label><br>
+        <select id="education" name="education" required>
+            <option value="highschool">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+        </select><br><br>
+
+        <label for="position">Position Applied For:</label><br>
+        <input type="text" id="position" name="position" required><br><br>
+
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
